@@ -1,0 +1,105 @@
+
+#bg-cover{
+    height: 1000px;
+    background-size:cover; 
+    background:no-repeat;
+    background-image:url("/images/IMG_8274.JPG");
+    background-image: fixed;
+    background-position:center ;
+  }
+
+  #homepage {
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  p {
+    font-size:28px;
+  }
+
+  body {
+    background-color: rgba(10, 10, 10, 0.534);
+    color:white;
+    font-family: Helvetica;
+    font-size: 16px;
+  }
+  .card{
+    width: 20%;
+    height: 350px;
+    margin: 2.5%;
+    padding-top: 15%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    color: black;
+    background-size: contain;
+    background:no-repeat;
+  }
+  .page-row{
+      border:solid whitesmoke;
+  }
+
+/* logion style */
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color:rgb(35, 123, 145);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: whitesmoke;
+}
+
+.login, .signup, .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-content:flex-start[];
+}
+
+label{
+    color:rgb(35, 123, 145);
+}
+h3{
+    color:whitesmoke;
+}
+
+/*
+Contact Style
+*/
+
+/* Style inputs with type="text", select elements and textareas */
+[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+ 
+  /* Add a background color and some padding around the form */
+  
