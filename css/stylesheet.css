@@ -21,7 +21,7 @@
   }
 
   body {
-    background-color: rgba(10, 10, 10, 0.534);
+    background-color: rgba(25,26,30,255);
     color:white;
     font-family: Helvetica;
     font-size: 16px;
@@ -42,7 +42,7 @@
       border:solid whitesmoke;
   }
 
-/* logion style */
+/* login style */
 
 input[type=text] {
   width: 50%;
@@ -54,7 +54,17 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+button[type=submit] {
   width: 50%;
   background-color:rgb(35, 123, 145);
   color: white;
@@ -65,11 +75,22 @@ input[type=submit] {
   cursor: pointer;
 }
 
+input[type=submit] {
+    width: 50%;
+    background-color:rgb(35, 123, 145);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
 input[type=submit]:hover {
   background-color: whitesmoke;
 }
 
-.login, .signup, .container {
+.container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -88,8 +109,8 @@ Contact Style
 */
 
 /* Style inputs with type="text", select elements and textareas */
-[type=text], textarea {
-    width: 100%; /* Full width */
+[type=text] textarea {
+    width: 100%;
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -99,7 +120,100 @@ Contact Style
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
-  /* Style the submit button with a specific background color etc */
- 
-  /* Add a background color and some padding around the form */
+
+.row{
+    background-color: black;
+}
+
+
+
+  /* Style the container for inputs */
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
   
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  .valid {
+    color: whitesmoke;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+  /* red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }
+
+  /* Product Style */
+
+
+/*
+table element 
+*/
+
+table{
+    border: solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/*
+ tr, td, and th elements
+*/
+
+tr, td, th{
+    border:solid 2px black;
+}
+
+
+/*
+ target the th element 
+  - set the background color to black
+  - set the text color to white
+*/
+th{
+    background-color: rgb(35, 123, 145);
+    color: whitesmoke;
+}
+
+
+
+
+/*
+ target the element with the id of travel-table 
+  - make the text color black
+  - make the background color white
+*/
+#art-table{
+    color: rgb(35, 123, 145);
+    background-color: whitesmoke;
+}
+.product{
+    text-align: center;
+    color: rgb(35, 123, 145);
+}

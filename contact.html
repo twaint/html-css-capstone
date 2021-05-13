@@ -1,35 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/stylesheet.css">
     <title>Contact</title>
 </head>
-<body>
-    <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Your name..">
-          <br>
-      
-          <label for="cemail">Email</label>
-          <input type="text" id="cemail" name="cemail" placeholder="Email..">
-          <br>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-</body>
-</html>
 
+<body>
+    <nav class="navbar navbar-expand-lrg bg-dark navbar-dark fixed-top">
+
+        <a class="navbar-brand" href="/homepage.html">Home</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/register.html">Sign-up</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.html">Gallary</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main class="mt-5">
+
+        <div class="container">
+            <form action="action_page.php">
+
+                <label for="fname">Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your name..">
+                <br>
+
+                <label for="cemail">Email:</label>
+                <input type="text" id="cemail" name="cemail" placeholder="Email..">
+                <br>
+
+                <label for="reason">Reason for contacting us:</label>
+                <select name="concerns" id="concerns" placeholder="Select one..">
+                  <option value="missing">Item is missing</option>
+                  <option value="invalid">Can't log into account</option>
+                  <option value="refund">Didn't want item</option>
+                </select>
+
+                <br>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> <br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

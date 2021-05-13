@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="/css/stylesheet.css">
-        <title>Sign-up</title>
-    
-    
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <title>Sign-up</title>
+
+
+</head>
+
 <body>
 
-<h3>Create account</h3>
+    <nav class="navbar navbar-expand-lrg bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="/homepage.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-<div class= "signup">
-  <form action="/action_page.php">
-    <label for="fullname">Name</label>
-    <input type="text" id="fullname" name="fullname" placeholder="Enter name..">
-    <br>
+            <ul class="navbar-nav">
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="lastname" placeholder="Enter email..">
-    <br>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Login</a>
+                </li>
 
-    <label for="password">Password</label>
-        <input type="text" id="password" name="password" placeholder="At least 6 characters..">
-        <br>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register.html">Sign-up</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/products.html">Gallary</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <main class="mt-5">
+
+        <h1>Create account</h1>
+
+        <!--Form layout-->
+
+        <form action="/action_page.php" class="was-validated container">
+
+            <div class="form-group">
+                <label for="fullname">Name:</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Enter full name" name="fullname"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter valid email" name="email"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="uname">Username:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter a valid password"
+                    name="password" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="vpassword">Verify Password:</label>
+                <input type="password" class="form-control" id="vpassword" placeholder="Re-enter password"
+                    name="password" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
 
 
-    <label for="repassword">Re-enter password</label>
-        <input type="text" id="repassword" name="password" placeholder="Please re-enter password..">
-        
-    
-  
-    <input type="submit" value="Submit">
-  </form>
-</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </main>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>
